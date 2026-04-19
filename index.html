@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartMail</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="app_icon.png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0b0f19, #111827);
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+      width: 40px;
+      border-radius: 12px;
+    }
+
+    .logo span {
+      font-size: 22px;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    .hero span {
+      color: #3b82f6;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      color: #94a3b8;
+      font-size: 18px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .download-btn {
+      margin-top: 35px;
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 18px;
+      background: #3b82f6;
+      color: white;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(59,130,246,0.3);
+    }
+
+    .download-btn:hover {
+      background: #2563eb;
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    .features {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.8);
+      padding: 25px;
+      border-radius: 18px;
+      transition: 0.3s;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      background: rgba(31, 41, 55, 0.9);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #3b82f6;
+    }
+
+    .card p {
+      color: #94a3b8;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .download-btn {
+        width: 100%;
+        padding: 14px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+```
+<header>
+  <div class="logo">
+    <img src="app_icon.png" alt="SmartMail Logo">
+    <span>SmartMail</span>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Your Inbox, <span>Smarter.</span></h1>
+  <p>
+    AI-powered email summarization, intelligent sorting, and a clean, distraction-free experience.
+  </p>
+
+  <!-- 🔥 REPLACE THIS LINK -->
+  <a class="download-btn" href="https://github.com/Swayam095/smartmail/releases/download/APK/smartmail.apk">
+    Download APK
+  </a>
+</section>
+
+<section class="features">
+
+  <div class="card">
+    <h3>AI Summarization</h3>
+    <p>Understand long emails instantly with smart AI summaries.</p>
+  </div>
+
+  <div class="card">
+    <h3>Smart Categories</h3>
+    <p>Automatically sort emails into Work, Personal, Spam and more.</p>
+  </div>
+
+  <div class="card">
+    <h3>Minimal UI</h3>
+    <p>Clean dark interface designed for focus and clarity.</p>
+  </div>
+
+  <div class="card">
+    <h3>Fast & Lightweight</h3>
+    <p>Built for speed with zero unnecessary clutter.</p>
+  </div>
+
+</section>
+```
+
+  </div>
+
+  <footer>
+    © 2026 SmartMail. Built with focus.
+  </footer>
+
+</body>
+</html>
